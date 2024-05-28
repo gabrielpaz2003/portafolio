@@ -6,15 +6,15 @@
   <ul class="links">
     <li>
       <a routerLink="/" routerLinkActive="active">Home</a>
-      <a routerLink="/">About me</a>
-      <a routerLink="/">Projects</a>
-      <a routerLink="/">Contact</a>
+      <a routerLink="/biography" routerLinkActive="active">About me</a>
+      <a routerLink="/projects" routerLinkActive="active">Projects</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
     </li>
   </ul>
-  <div class="action_btn">
-    <a > Download CV</a>
+  <button class="action_btn" (click)="openCvModal()">
+    Download CV
     <i class="fa-solid fa-file-arrow-down"></i>
-  </div>
+  </button>
   <!--<div class="toggle-btn">
     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
   </div>
@@ -31,3 +31,15 @@
   </li>
 </div>-->
 
+<!-- Modal Structure -->
+<div *ngIf="showCvModal" class="cv-modal">
+  <div class="cv-modal-content">
+    <span class="close" (click)="closeCvModal()">&times;</span>
+    <p>Choose your preferred language for the CV:</p>
+    <div class="buttons">
+      <button class="button" (click)="downloadCv('es')">ES</button>
+      <button class="button" (click)="downloadCv('en')">EN</button>
+    </div>
+
+  </div>
+</div>

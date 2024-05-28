@@ -1,3 +1,4 @@
-body{
-  background-color: blue;
+.container-app{
+  position: relative;
+  z-index: 100;
 }

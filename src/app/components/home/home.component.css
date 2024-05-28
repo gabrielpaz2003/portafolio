@@ -17,7 +17,17 @@
   height: auto;
 }
 
+@keyframes animate {
+  0%{
+    transform: hue-rotate(0deg);
+  }
+  100%{
+    transform: hue-rotate(360deg);
+  }
+}
+
 .profile-info {
+  background: #0d0d0df1;
   border: rgba(32, 97, 121, 0.677) 2px solid;
   border-radius: 20px;
   flex: 2;

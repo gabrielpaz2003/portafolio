@@ -10,6 +10,8 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { ProjectSliderComponent } from './components/project-slider/project-slider.component';
 import { TechnologyDisplayComponent } from './components/technology-display/technology-display.component';
 import { NgxParticlesModule } from '@tsparticles/angular';
+import { BackgroundComponent } from './components/background/background.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { NgxParticlesModule } from '@tsparticles/angular';
     BiographyComponent,
     ExperienceComponent,
     ProjectSliderComponent,
-    TechnologyDisplayComponent
+    TechnologyDisplayComponent,
+    BackgroundComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
