@@ -1,0 +1,107 @@
+.resumen{
+  padding: 40px 0 40px 0;
+  text-align: center;
+}
+.resumen .contenido-seccion{
+  background: #0d0d0df1;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px 40px 40px 40px;
+  border: rgba(32, 97, 121, 0.677) 2px solid;
+  border-radius: 20px;
+}
+.resumen .contenido-seccion h3{
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #60d4ea;
+  margin-bottom: 0px;
+}
+.resumen .contenido-seccion .info{
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.resumen .contenido-seccion .info .col{
+  width: 45%;
+}
+.resumen .contenido-seccion .info .col .titulo{
+  display: inline-block;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  color: #60d4ea;
+  font-weight: bold;
+  border: 2px solid #60d4ea;
+  padding: 10px;
+  transition: scale 0.2s ease;
+
+}
+.resumen .contenido-seccion .info .col .titulo:hover{
+  scale: 1.05;
+  color: white;
+}
+.resumen .contenido-seccion .info .col table{
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+.resumen .contenido-seccion .info .col table .datos{
+  width: 40%;
+  border-bottom: 1px solid #bab9b9;
+}
+.resumen .contenido-seccion .info .col table h4{
+  margin-top: 10px;
+}
+.resumen .contenido-seccion .info .col table h3{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.resumen .contenido-seccion .info .col table p{
+  font-size: 14px;
+}
+.resumen .contenido-seccion .info .col table .promedio{
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  display: block;
+  color: #60d4ea;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.resumen .contenido-seccion .info .col table .descripcion{
+  border-left: 1px solid #bab9b9;
+  padding-left: 20px;
+}
+
+p, h4, td{
+  color: white !important;
+}
+
+p{
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h4{
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+td{
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 300;
+}
+
+
+
