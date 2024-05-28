@@ -1,1 +1,34 @@
-<p>project-slider works!</p>
+<!-- project-slider.component.html -->
+<div class="main-container">
+  <h1>PROYECTOS</h1>
+  <div class="wrapper">
+    <div class="container">
+      <div *ngFor="let project of projects; let i = index">
+        <input type="radio" name="slide" [id]="'c' + project.id">
+        <label [for]="'c' + project.id" class="card" [ngStyle]="{'background-image': 'url(' + project.imageUrl + ')'}">
+          <div class="row">
+            <div class="icon">{{ project.id }}</div>
+            <div (click)="openModal(i)" class="description">
+              <h4>{{ project.name }}</h4>
+              <p>{{ project.details }}</p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="selectedProjectIndex !== null" class="modal">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <video controls [src]="projects[selectedProjectIndex].videoUrl"></video>
+    <h2>{{ projects[selectedProjectIndex].name }}</h2>
+    <p>{{ projects[selectedProjectIndex].details }}</p>
+    <div class="button">
+      <a [href]="projects[selectedProjectIndex].sourceCodeUrl" target="_blank">Source Code</a>
+      <i class="fa-brands fa-github"></i>
+    </div>
+
+  </div>
+</div>
