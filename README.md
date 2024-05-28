@@ -1,27 +1,69 @@
-# Portafolio
+# Portafolio - Gabriel Paz
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+## Descripción
+Este proyecto es un portafolio personal desarrollado para demostrar mis habilidades y proyectos como Desarrollador Junior Front-End. Incluye ejemplos interactivos de mis trabajos más destacados y detalles sobre las tecnologías que utilizo, tales como Angular, React y diversas herramientas de desarrollo web.
 
-## Development server
+## Requisitos
+- Node.js
+- Angular CLI
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalación
+1. Navega al directorio del proyecto:
 
-## Code scaffolding
+cd portafolio
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+2. Instala las dependencias necesarias:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+npm install
 
-## Running unit tests
+## Uso
+1. Para iniciar el servidor de desarrollo, ejecuta:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng serve
 
-## Running end-to-end tests
+Navega a `http://localhost:4200/`. La aplicación se recargará automáticamente si realizas cambios en los archivos del código fuente.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Para construir la versión de producción, ejecuta:
 
-## Further help
+ng build
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Los artefactos de construcción se almacenarán en el directorio `dist/`.
+
+## Estructura del Proyecto
+A continuación, se muestra un resumen de los directorios y archivos más importantes del proyecto:
+
+**/src**
+|-- /app
+|   |-- /components
+|   |   |-- /navbar
+|   |   |-- /home
+|   |   |-- /about
+|   |   |-- /contact
+|   |-- /models
+|   |-- /services
+|-- /assets
+|   |-- /img
+|   |-- /video
+|-- /environments
+|-- index.html
+|-- main.ts
+|-- styles.css
+
+### Componentes
+- **Navbar:** Barra de navegación utilizada en todo el proyecto.
+- **Home:** Página de inicio del portafolio.
+- **About:** Sección que describe información personal y profesional.
+- **Contact:** Formulario y enlaces para contactarme directamente.
+- **Project-Slider:** Componente con cards y modal dinamico que muestra los proyectos.
+
+## Desarrollado por
+Gabriel Paz - Desarrollador Junior especializado en tecnologías Front-End.
+
+## Licencia
+Este proyecto está bajo la Licencia ISC.
+
+## Angular y Herramientas Adicionales
+Este proyecto utiliza Angular como framework principal, aprovechando sus capacidades para construir aplicaciones robustas y eficientes.
+
+Además, se integran herramientas como Angular Material para los componentes de la interfaz de usuario y RxJS para la gestión de estados y eventos.
