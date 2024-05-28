@@ -7,8 +7,14 @@ import { Component, ChangeDetectorRef } from '@angular/core';
 })
 export class NavbarComponent {
   showCvModal: boolean = false;
+  isMenuOpen = false;
 
   constructor(private cd: ChangeDetectorRef) {}
+
+
+  toggleMenu(): void {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
   openCvModal(): void {
     this.showCvModal = true;

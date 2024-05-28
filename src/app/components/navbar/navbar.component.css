@@ -27,6 +27,7 @@ a{
 
 .logo {
   margin-left: 2rem;
+  padding: 10px 10px 10px 10px;
   display: flex;
   flex-direction: column; /* Organiza los hijos en una columna */
   align-items: center; /* Centra los elementos horizontalmente */
@@ -43,20 +44,24 @@ a{
 }
 
 .navbar .logo .title {
+  color: white;
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 700;
   font-size: 1.5rem;
+  margin-bottom: 0px !important;
 }
 
 .navbar .logo .subtitle {
+  color: white;
   font-family: "Space Grotesk", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
   margin-top: 0; /* Ajusta según sea necesario para el espaciado entre título y subtítulo */
+  margin-bottom: 10px !important;
 }
 
 
@@ -112,55 +117,7 @@ a{
   scale: 0.95;
 }
 
-/*DROPDOWN MENU */
-.dropdown_menu{
-  display: none;
-  position: absolute;
-  right: 2rem;
-  top: 60px;
-  height: 0;
-  width: 300px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
 
-.dropdown_menu.open{
-  height: 240px;
-}
-
-.dropdown_menu li{
-  padding: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.dropdown_menu .action_btn{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-
-/*RESPONSIVE */
-
-@media(max-width:992px) {
-  .navbar .links,
-  .navbar .action_btn{
-    display: none;
-  }
-
-  .navbar .toggle_btn{
-    display: block;
-  }
-
-  .dropdown_menu{
-    display: block;
-  }
-}
 
 
 .cv-modal {
